@@ -40,18 +40,22 @@ h1 {
 /* small text */
 .regular-small {
   font-weight: 400;
+  font-size: 12px;
 }
 
 .medium-small {
   font-weight: 600;
+  font-size: 12px;
 }
 
 .semi-bold-small {
   font-weight: 800;
+  font-size: 12px;
 }
 
 .bold-small {
   font-weight: 1000;
+  font-size: 12px;
 }
 
 /* medium text */
