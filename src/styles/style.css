@@ -62,42 +62,42 @@ h1 {
 
 .medium-medium {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .semi-bold-medium {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .bold-medium {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* large text */
 .regular-large {
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .medium-large {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .semi-bold-large {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .bold-large {
   font-weight: 900;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .larger-bold {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   background: linear-gradient(to right, #03045e, #023e8a, #0077b6, #0096c7);
   -webkit-background-clip: text;
