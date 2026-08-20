@@ -114,12 +114,13 @@ h1 {
 .home-page {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 80px;
 }
 
 .menu-bar {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .logo {
