@@ -41,6 +41,9 @@ function Home() {
           <img src={profileImage} alt="Profile" />
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 }

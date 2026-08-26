@@ -14,21 +14,9 @@ class App extends React.Component {
     return (
       <div>
         <Home/>
-        <br/>
-        <br/>
-        <br/>
         <Education/>
-        <br/>
-        <br/>
-        <br/>
         <Skills/>
-        <br/>
-        <br/>
-        <br/>
         <Projects/>
-        <br/>
-        <br/>
-        <br/>
         <Footer/>
       </div>
     );

@@ -7,7 +7,7 @@ import githubIcon from "../assets/GitHub_Symbol_1.png";
 function Footer() {
   return (
     <div id="contact" className="footer-page">
-      <p className="semi-bold-medium">Contact Me</p>
+      <p className="semi-bold-large">Contact Me</p>
       <div className="contact-list">
         <div className="contact-item">
           <img className="whatsapp-icon" src={whatsappIcon} alt="WhatsApp" />

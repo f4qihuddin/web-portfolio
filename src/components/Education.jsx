@@ -1,57 +1,52 @@
-import React from "react";
-import universityLogo from "../assets/logo upi.png";
-import dicodingLogo from "../assets/dicoding-logo.png";
-import bulletListIcon from "../assets/bullet-list.svg";
+const learningPath = [
+  {
+    number: "01",
+    title: "The Basics of AI",
+    description:
+      "Learning the basics concepts of Artificial Intelligence, Machine Learning, and Deep Learning and the application of cutting-edge AI technology in real world scenario",
+  },
+  {
+    number: "02",
+    title: "Machine Learning with Python",
+    description:
+      "Learning how to perform Exploratory Data Analysis, Data Cleaning, Data Preprocessing, and building machine learning models for predictive analytics ranging from regression, classification, and clustering with Python",
+  },
+  {
+    number: "03",
+    title: "Deep Learning Fundamental",
+    description:
+      "Learning the basics of neural network, frameworks such as TensorFlow and Keras, image classification, Natural Language Processing, dan recommender system . in addiion, I also built sentiment analysis model and computer vision projects",
+  },
+  {
+    number: "04",
+    title: "Applied Machine Learning",
+    description:
+      "Learning how to build machine learning models to solve real-world problems such as predictive analytics, sentiment classification, computer vision, content-based filtering and collaborative filtering recommendation systems",
+  },
+];
 
 function Education() {
   return (
     <div id="education" className="education-page">
       <p className="semi-bold-large">Education</p>
-      <div className="university-info">
-        <div className="university-logo">
-          <img src={universityLogo} />
-        </div>
-        <div className="university-description">
-          <p className="semi-bold-medium">Universitas Pendidikan Indonesia</p>
-          <p className="regular-small">
-            Mechatronics and Artificial Intelligence
-          </p>
-          <p className="regular-small">2023 - Present</p>
-        </div>
-      </div>
-      <br />
-      <p className="paragraph">
-        Currently pursuing bachelor degree majoring in Mechatronic and
-        Artificial Intelligence. During my learning journey, i learned a lot
-        about Artificial Intelligence from basic concepts of AI, Machine
-        Learning, and also Deep Learning. Besides that, i have done multiple AI
-        projects. Besides mandatory classes, i also participated and got
-        certified by joining various online courses to further boost my skill
+      <p className="paragraph-centered">
+        During my study, I have learned many things about data analytics and
+        artificial intelligence. In addition to my academic background, i also
+        participated in various data analytics and artificial intelligence
+        courses
       </p>
       <br />
-      <p className="semi-bold-small">Recent courses i finished: </p>
-      <br />
-      <div className="courses">
-        <div className="dicoding-logo">
-          <img src={dicodingLogo} />
-        </div>
-        <div>
-          <div className="course-item">
-            <img src={bulletListIcon} />
-            <p>AWS AI Academy 2026</p>
-          </div>
-          <div className="course-item">
-            <img src={bulletListIcon} />
-            <p>Pijak in Colaboration with IBM SkilsBuild</p>
-          </div>
-          <div className="course-item">
-            <img src={bulletListIcon} />
-            <p>Microsoft Elevate Training Center</p>
-          </div>
-        </div>
+      <div className="learning-path" aria-label="Learning path">
+        {learningPath.map((step) => (
+          <article className="learning-step" key={step.number}>
+            <div className="step-number">{step.number}</div>
+            <div className="learning-card">
+              <h2>{step.title}</h2>
+              <p className="paragraph-centered">{step.description}</p>
+            </div>
+          </article>
+        ))}
       </div>
-      <br />
-      <br />
     </div>
   );
 }
