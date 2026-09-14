@@ -613,9 +613,6 @@ h1 {
 
 .project-description {
   width: 65%;
-  background: #caf0f8;
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(3, 4, 94, 0.25);
   padding: 20px;
 }
 
