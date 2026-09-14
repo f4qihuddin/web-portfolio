@@ -19,6 +19,10 @@ import htmlIcon from "../assets/HTML5.png";
 import cssIcon from "../assets/CSS3.png";
 import CIcon from "../assets/C.png";
 import mysqlIcon from "../assets/MySQL.png";
+import dockerIcon from "../assets/docker.png";
+import metabaseIcon from "../assets/metabase.png";
+import businessDashboardImage from "../assets/business_dashboard.png"
+import bitcoinTrend from "../assets/bitcoin_trend.png"
 
 const projects = {
   sentifyChatbot: {
@@ -85,10 +89,55 @@ const projects = {
       },
     ],
   },
+  attritionAnalysis: {
+    image: businessDashboardImage,
+    title: "Employee Attrition Analysis",
+    description:
+      "Conducting exploratory data analysis to extract meaningful insights about factors affecting  employee attrition rate. Building a business dashboard using Metabase and developing a classfification to classify wheter an employee will resign or not.",
+    skills: [
+      {
+        icon: pythonIcon,
+        name: "Python",
+        className: "skills-icon",
+      },
+      {
+        icon: scikitIcon,
+        name: "Scikit-learn",
+        className: "skills-icon",
+      },
+      {
+        icon: dockerIcon,
+        name: "Docker",
+        className: "skills-icon",
+      },
+      {
+        icon: metabaseIcon,
+        name: "Metabase",
+        className: "skills-icon",
+      },
+    ],
+  },
+  bitcoinPricePrediction: {
+    image: bitcoinTrend,
+    title: "Bitcoin Multistep Forecasting using LSTM",
+    description: "Building a multistep forecssting model to predict bitcoin price in the next 24 hours. I built and compared the result of LSTM and Sequence to Sequence LSTM to predict bitcoin trend as accurrately as possible",
+    skills: [
+      {
+        icon: pythonIcon,
+        name: "Python",
+        className: "skills-icon",
+      },
+      {
+        icon: tensorflowIcon,
+        name: "TensorFlow",
+        className: "skills-icon",
+      }
+    ]
+  },
   recommenderSystem: {
     title: "Netflix Recommender System using Content-based Filtering",
     description:
-      "Building a recommender system based on Netflix movis dataset to recommend top 10 movies or TV Shows based on user preferences. The recommender system is built with Content-based Filtering Algorithm using cosine similiarity to calculate similiarity between each movies",
+      "Building a recommender system based on Netflix movie dataset to recommend top 10 movies or TV Shows based on user preferences. The recommender system is built with Content-based Filtering Algorithm using cosine similiarity to calculate similiarity between each movies",
     skills: [
       {
         icon: pythonIcon,

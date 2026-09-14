@@ -143,7 +143,6 @@ h1 {
 
 .menus {
   display: flex;
-  background: ;
   justify-content: space-around;
   align-items: center;
   width: 40%;
@@ -213,7 +212,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 56px 24px 80px;
-  background: linear-gradient(to bottom, #90E0EF, #CAF0F8, #90E0EF);
+  background: linear-gradient(to bottom, #90e0ef, #caf0f8, #90e0ef);
 }
 
 .learning-path {
@@ -423,7 +422,7 @@ h1 {
   flex-direction: column;
   width: 70%;
   height: 60%;
-  background: linear-gradient(to left, #90E0EF, #48CAE4, #00B4D8, #0096C7);
+  background: linear-gradient(to left, #90e0ef, #48cae4, #00b4d8, #0096c7);
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(3, 4, 94, 0.25);
   padding-bottom: 30px;
@@ -482,7 +481,7 @@ h1 {
   flex-direction: column;
   width: 70%;
   height: 60%;
-  background: linear-gradient(to left, #90E0EF, #48CAE4, #00B4D8, #0096C7);
+  background: linear-gradient(to left, #90e0ef, #48cae4, #00b4d8, #0096c7);
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(3, 4, 94, 0.25);
   padding-bottom: 30px;
@@ -497,7 +496,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #90E0EF, #CAF0F8, #90E0EF);
+  background: linear-gradient(to bottom, #90e0ef, #caf0f8, #90e0ef);
 }
 
 .project-showcase {
@@ -588,9 +587,20 @@ h1 {
   align-items: center;
   justify-content: space-around;
   gap: 30px;
-  background: linear-gradient(to bottom, #90E0EF, #48CAE4, #00B4D8, #0096C7);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(202, 240, 248, 0.18),
+    rgba(202, 240, 248, 0.12),
+    rgba(255, 255, 255, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(3, 4, 94, 0.25);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(3, 4, 94, 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   padding: 40px;
 }
 
@@ -603,7 +613,7 @@ h1 {
 
 .project-description {
   width: 65%;
-  background: #CAF0F8;
+  background: #caf0f8;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(3, 4, 94, 0.25);
   padding: 20px;
@@ -629,11 +639,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #03045E, #023E8A, #0077B6);
+  background: linear-gradient(to bottom, #03045e, #023e8a, #0077b6);
 }
 
 .footer-page p {
-  color: #CAF0F8;
+  color: #caf0f8;
 }
 
 .contact-item {
@@ -650,7 +660,7 @@ h1 {
 }
 
 .contact-item a {
-  color: #CAF0F8;
+  color: #caf0f8;
 }
 
 .whatsapp-icon {

@@ -16,6 +16,8 @@ import htmlIcon from "../assets/HTML5.png";
 import cssIcon from "../assets/CSS3.png";
 import CIcon from "../assets/C.png";
 import mysqlIcon from "../assets/MySQL.png";
+import dockerIcon from "../assets/docker.png";
+import metabaseIcon from "../assets/metabase.png";
 
 function Skills() {
   const [activeButton, setActiveButton] = useState("ai");
@@ -78,6 +80,10 @@ function Skills() {
               <img className="mlflow-icon" src={mlflowIcon} />
               MLflow
             </div>
+            <div className="tech-stacks-item">
+              <img className="skills-icon" src={metabaseIcon} />
+              Metabase
+            </div>
           </div>
           <br />
           <br />
@@ -93,6 +99,10 @@ function Skills() {
             <div className="tech-stacks-item">
               <img className="skills-icon" src={grafanaIcon} />
               Grafana
+            </div>
+            <div className="tech-stacks-item">
+              <img className="skills-icon" src={dockerIcon} />
+              Docker
             </div>
           </div>
         </div>
