@@ -23,13 +23,16 @@ import dockerIcon from "../assets/docker.png";
 import metabaseIcon from "../assets/metabase.png";
 import businessDashboardImage from "../assets/business_dashboard.png"
 import bitcoinTrend from "../assets/bitcoin_trend.png"
+import objectDetection from "../assets/object_detection_yolov8.png"
 
 const projects = {
   sentifyChatbot: {
     image: sentifyChatbotImage,
     title: "Sentify: AI Based E-Commerce Data Analysis",
     description:
-      "Sentify is an AI-based e-commerce data analysis web application that allows you to summarize and gain insights from your e-commerce data through a dashboard, deep learning-based sentiment classification, as well as a large language model-based chatbot to answer various questions related to your data.",
+      `Sentify is an AI-based e-commerce data analysis web application that allows you to summarize and gain insights from 
+      your e-commerce data through a dashboard, deep learning-based sentiment classification, as well as a large language 
+      model-based chatbot to answer various questions related to your data.`,
     skills: [
       {
         icon: pythonIcon,
@@ -52,7 +55,9 @@ const projects = {
     image: analyticsDashboardImage,
     title: "E-Commerce Data Analysis",
     description:
-      "Conducting E-Commerce sales data analysis, Olist. Using the SMART framework to formulate questions, then performing data wrangling and RFM (recency, frequency, and monetary) analysis to extract insights and provide action-oriented recommendations, as well as creating a dashboard for explanatory data analysis.",
+      `Conducting E-Commerce sales data analysis, Olist. Using the SMART framework to formulate questions, then performing 
+      data wrangling and RFM (recency, frequency, and monetary) analysis to extract insights and provide 
+      action-oriented recommendations, as well as creating a dashboard for explanatory data analysis.`,
     skills: [
       {
         icon: pythonIcon,
@@ -70,7 +75,9 @@ const projects = {
     image: apiMonitoringImage,
     title: "Automated Machine Learning Workflow",
     description:
-      "Creating an automated machine learning system workflow using GitHub Actions and MLFlow to automate model training, and developing a monitoring and alerting system with Prometheus and Grafana to monitor model performance in real-time and give alerts when a problem occur.",
+      `Creating an automated machine learning system workflow using GitHub Actions and MLFlow to automate model training,
+       and developing a monitoring and alerting system with Prometheus and Grafana to monitor model performance in real-time
+       and give alerts when a problem occur.`,
     skills: [
       {
         icon: mlflowIcon,
@@ -93,7 +100,9 @@ const projects = {
     image: businessDashboardImage,
     title: "Employee Attrition Analysis",
     description:
-      "Conducting exploratory data analysis to extract meaningful insights about factors affecting  employee attrition rate. Building a business dashboard using Metabase and developing a classfification to classify wheter an employee will resign or not.",
+      `Conducting exploratory data analysis to extract meaningful insights about factors affecting  employee attrition rate.
+      Building a business dashboard using Metabase and developing a classfification to classify wheter an employee will resign
+      based on various factors. The model is then deployed using Streamlit and Docker. or not.`,
     skills: [
       {
         icon: pythonIcon,
@@ -120,7 +129,32 @@ const projects = {
   bitcoinPricePrediction: {
     image: bitcoinTrend,
     title: "Bitcoin Multistep Forecasting using LSTM",
-    description: "Building a multistep forecssting model to predict bitcoin price in the next 24 hours. I built and compared the result of LSTM and Sequence to Sequence LSTM to predict bitcoin trend as accurrately as possible",
+    description: `
+    Building a multistep forecssting model to predict bitcoin price in the next 24 hours. I built and compared 
+    the result of LSTM and Sequence to Sequence LSTM to predict bitcoin trend as accurrately as possible
+    `,
+    skills: [
+      {
+        icon: pythonIcon,
+        name: "Python",
+        className: "skills-icon",
+      },
+      {
+        icon: tensorflowIcon,
+        name: "TensorFlow",
+        className: "skills-icon",
+      }
+    ]
+  },
+  multiObjectDetection: {
+    image: objectDetection,
+    title: "Multiple Object Detection at Road Intersection using YOLOV8",
+    description: `
+    In this computer vision project, I built a fine-tuned YOLOV8 model using road intersection images dataset from Kaggle.
+    The image data consists of multiple random objects from cars, buses, pedestrians, trucks, obstacles, and more common 
+    things seen at road intersections. The confidence threshold and intersecion over union are set to 0.7 in the Non Maximum 
+    Suppression layers, which reduce the model's missclassifications (detecting the wrong objects).
+    `,
     skills: [
       {
         icon: pythonIcon,
@@ -137,7 +171,9 @@ const projects = {
   recommenderSystem: {
     title: "Netflix Recommender System using Content-based Filtering",
     description:
-      "Building a recommender system based on Netflix movie dataset to recommend top 10 movies or TV Shows based on user preferences. The recommender system is built with Content-based Filtering Algorithm using cosine similiarity to calculate similiarity between each movies",
+      `Building a recommender system based on Netflix movie dataset to recommend top 10 movies or TV Shows based on user 
+      preferences. The recommender system is built with Content-based Filtering Algorithm using cosine similiarity to 
+      calculate similiarity between each movies`,
     skills: [
       {
         icon: pythonIcon,
@@ -149,7 +185,9 @@ const projects = {
   sentimentAnalysis: {
     title: "Sentiment Analysis Model for Tokopedia Application Reviews",
     description:
-      "Building a sentiment classifier model based on neural-network to classifiy Tokopedia reviews sentiment. The text data is collected using web scrapping, then cleaned using casefolding, tokenizing, filtering, lemmatization. The model then used the cleaned data to predict whether a review sentiment categorized as positive or negative",
+      `Building a sentiment classifier model based on neural-network to classifiy Tokopedia reviews sentiment. The text data
+       is collected using web scrapping, then cleaned using casefolding, tokenizing, filtering, lemmatization. The model then 
+       used the cleaned data to predict whether a review sentiment categorized as positive or negative`,
     skills: [
       {
         icon: pythonIcon,
@@ -166,7 +204,8 @@ const projects = {
   etlPipeline: {
     title: "Web Scrapping ETL Pipeline",
     description:
-      "Extracting data using web scrapping technique, then transforming the raw data to produce clean data, the cleaned data then loaded into PostgreSQL, Google Sheets, dan CSV format.",
+      `Extracting data using web scrapping technique, then transforming the raw data to produce clean data, the cleaned data
+      then loaded into PostgreSQL, Google Sheets, dan CSV format.`,
     skills: [
       {
         icon: pythonIcon,
@@ -177,7 +216,10 @@ const projects = {
   },
   elderlyPreFallDetection: {
     title: "Elderly Pre-Fall Detection using Machine Learning",
-    description: "Participated in 'Teman Jalan' research. During this research, i contributed by building a predictive model to detect elderly pre-fall occurence. Performing data augmentation using windowing technique and then built and compared various classification models such as  XGBoost, Random Forest, KNN, Decision Tree, dan more to determine the best model for detecting pre-fall occurence. The model then converted using TinyML to be embedded in a microcontroller in the prototype.",
+    description: `Participated in 'Teman Jalan' research. During this research, i contributed by building a predictive model
+    to detect elderly pre-fall occurence. Performing data augmentation using windowing technique and then built and compared
+    various classification models such as  XGBoost, Random Forest, KNN, Decision Tree, dan more to determine the best model 
+    for detecting pre-fall occurence. The model then converted using TinyML to be embedded in a microcontroller in the prototype.`,
     skills: [
       {
         icon: pythonIcon,
@@ -194,7 +236,8 @@ const projects = {
   documentChatbot: {
     title: "Document Summarizer Chatbot",
     description:
-      "Building a Large Language Model based Chatbot using Grok API. The LLM model is used to build a chatbot with abilities to summarize documents such as PDF and text files",
+      `Building a Large Language Model based Chatbot using Grok API. The LLM model is used to build a chatbot with abilities
+      to summarize documents such as PDF and text files`,
     skills: [
       {
         icon: pythonIcon,
