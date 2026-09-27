@@ -130,7 +130,7 @@ const projects = {
     image: bitcoinTrend,
     title: "Bitcoin Multistep Forecasting using LSTM",
     description: `
-    Building a multistep forecssting model to predict bitcoin price in the next 24 hours. I built and compared 
+    Building a multistep forecasting model to predict bitcoin price in the next 24 hours. I built and compared 
     the result of LSTM and Sequence to Sequence LSTM to predict bitcoin trend as accurrately as possible
     `,
     skills: [
